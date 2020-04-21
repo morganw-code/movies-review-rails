@@ -1,0 +1,8 @@
+<h1>Hello World!</h1>
+
+<% for movie in @movies %>
+    <li>
+        <%= link_to movie.title, movie_path(movie.id) %>
+        <%= movie.title %> - <%= movie.run_time %> - <% movie.run_time %>
+    </li>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  run_time: 1
+  adult_rated: false
+
+two:
+  title: MyString
+  run_time: 1
+  adult_rated: false

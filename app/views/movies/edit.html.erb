@@ -1,0 +1,10 @@
+<h1>woek</h1>
+
+<form action="<%= movie_path(@movie.id) %>" method="post">
+    <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
+    <input type="hidden" name="_method" value="put" />
+    <input placeholder="Movie Title" type="text" name="title" value="<%= @movie.title %>"/>
+    <input placeholder="Movie Duration" type="number" name="run_time" value="<%= @movie.run_time %>"/>
+    <input type="checkbox" name="adult_rated" checked="<%= @movie.adult_rated %>"/>
+    <button type="submit">Update</button>
+</form>
